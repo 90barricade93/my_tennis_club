@@ -4,9 +4,11 @@
 <link rel="stylesheet" href="{% static 'myfirst.css' %}">
 <body>
 
-{% for x in fruits %}
-  <h1>{{ x }}</h1>
-{% endfor %}
+  <ul>
+    {% for x in mymembers %}
+      <li>{{ x.firstname }}</li>
+    {% endfor %}
+  </ul>
 
 </body>
 </html>
