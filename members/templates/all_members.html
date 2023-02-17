@@ -13,7 +13,7 @@
   
   <ul>
     {% for x in mymembers %}
-      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }} {{ x.double_player}}</a></li>
     {% endfor %}
   </ul>
 {% endblock %}
