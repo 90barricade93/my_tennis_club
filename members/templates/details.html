@@ -7,9 +7,10 @@
 
 {% block content %}
   <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
-  
+  <p>Membership number: {{ mymember.membership_number }}</p>
   <p>Phone {{ mymember.phone }}</p>
   <p>Member since: {{ mymember.joined_date }}</p>
+  <p>Double player: {{ mymember.double_player}}</P
   
   <p>Back to <a href="/members">Members</a></p>
   

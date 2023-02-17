@@ -1,6 +1,7 @@
 from django.db import models
 
 class Member(models.Model):
+  membership_number = models.IntegerField(null=True)
   firstname = models.CharField(max_length=255)
   lastname = models.CharField(max_length=255)
   phone = models.IntegerField(null=True)
